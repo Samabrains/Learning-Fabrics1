@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "KQLDatabase",
+    "displayName": "samaeventshouse",
+    "description": "samaeventshouse"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "5d5a4d6e-2f00-9748-4f88-9baadb5e1923"
+  }
+}

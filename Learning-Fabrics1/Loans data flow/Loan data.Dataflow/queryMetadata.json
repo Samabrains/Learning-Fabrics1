@@ -1,0 +1,27 @@
+{
+  "formatVersion": "202502",
+  "computeEngineSettings": {},
+  "name": "Loan data",
+  "queryGroups": [],
+  "documentLocale": "en-US",
+  "queriesMetadata": {
+    "Group_Active_Loans csv": {
+      "queryId": "84317c07-3828-4541-9838-87ff730e6f78",
+      "queryName": "Group_Active_Loans csv",
+      "loadEnabled": false
+    },
+    "Group_Active_Loans csv_DataDestination": {
+      "queryId": "763d2858-bfdb-4f7c-aa6f-717c98cc339e",
+      "queryName": "Group_Active_Loans csv_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    }
+  },
+  "connections": [
+    {
+      "path": "Lakehouse",
+      "kind": "Lakehouse",
+      "connectionId": "{\"ClusterId\":\"bf65009d-0154-45e7-9e04-b65cb1ce0720\",\"DatasourceId\":\"1dff9feb-3037-478f-a9df-8ab90d135d51\"}"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+[
+  {
+    "name": "Fabric_TutorialAdventureWorks_Customers",
+    "path": "/Files",
+    "target": {
+      "type": "OneLake",
+      "oneLake": {
+        "path": "Files/Fabric_TutorialAdventureWorks_Customers",
+        "itemId": "a90146ba-9b58-831f-49cb-76d43a113418",
+        "workspaceId": "00000000-0000-0000-0000-000000000000",
+        "artifactType": "Lakehouse"
+      }
+    }
+  }
+]

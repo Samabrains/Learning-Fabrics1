@@ -1,0 +1,60 @@
+{
+  "config": "{\"version\":\"5.66\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":{\"visual\":\"1.8.95\",\"report\":\"2.0.95\",\"page\":\"1.3.95\"},\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "8196a2917e1bd2e937ad",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"36661883a3b696980bb0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":466.05466735430633,\"y\":0,\"z\":1,\"width\":310.2630221763796,\"height\":139.9484270242393}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Fabric_TutorialAdventureWorks_Product_Categories.CategoryName\"},{\"queryRef\":\"Sum(Fabric_TutorialAdventureWorks_Product_Categories.ProductCategoryKey)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Fabric_TutorialAdventureWorks_Product_Categories\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"CategoryName\"},\"Name\":\"Fabric_TutorialAdventureWorks_Product_Categories.CategoryName\",\"NativeReferenceName\":\"CategoryName\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"ProductCategoryKey\"}},\"Function\":0},\"Name\":\"Sum(Fabric_TutorialAdventureWorks_Product_Categories.ProductCategoryKey)\",\"NativeReferenceName\":\"Sum of ProductCategoryKey\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 139.95,
+          "width": 310.26,
+          "x": 466.05,
+          "y": 0.00,
+          "z": 1.00
+        },
+        {
+          "config": "{\"name\":\"9ac074766cb1c2469f50\",\"layouts\":[{\"id\":0,\"position\":{\"x\":191.43888602372357,\"y\":224.44559051057246,\"z\":2,\"width\":866.0959257349149,\"height\":372.3156266116555}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Fabric_TutorialProduct_Subcategories.SubcategoryName\"},{\"queryRef\":\"Fabric_TutorialAdventureWorks_Product_Categories.CategoryName\"},{\"queryRef\":\"Sum(Fabric_TutorialProduct_Subcategories.ProductCategoryKey)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Fabric_TutorialProduct_Subcategories\",\"Type\":0},{\"Name\":\"f1\",\"Entity\":\"Fabric_TutorialAdventureWorks_Product_Categories\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"SubcategoryName\"},\"Name\":\"Fabric_TutorialProduct_Subcategories.SubcategoryName\",\"NativeReferenceName\":\"SubcategoryName\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f1\"}},\"Property\":\"CategoryName\"},\"Name\":\"Fabric_TutorialAdventureWorks_Product_Categories.CategoryName\",\"NativeReferenceName\":\"CategoryName\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"ProductCategoryKey\"}},\"Function\":0},\"Name\":\"Sum(Fabric_TutorialProduct_Subcategories.ProductCategoryKey)\",\"NativeReferenceName\":\"Sum of ProductCategoryKey\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 372.32,
+          "width": 866.10,
+          "x": 191.44,
+          "y": 224.45,
+          "z": 2.00
+        },
+        {
+          "config": "{\"name\":\"b4bcd572577f111bce9f\",\"layouts\":[{\"id\":0,\"position\":{\"x\":83.17689530685921,\"y\":0,\"z\":0,\"width\":216.52398143372872,\"height\":139.9484270242393}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(Fabric_TutorialAdventureWorks_Product_Categories.ProductCategoryKey)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Fabric_TutorialAdventureWorks_Product_Categories\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"ProductCategoryKey\"}},\"Function\":0},\"Name\":\"Sum(Fabric_TutorialAdventureWorks_Product_Categories.ProductCategoryKey)\",\"NativeReferenceName\":\"Sum of ProductCategoryKey\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 139.95,
+          "width": 216.52,
+          "x": 83.18,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

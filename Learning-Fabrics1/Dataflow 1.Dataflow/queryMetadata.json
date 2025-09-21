@@ -1,0 +1,60 @@
+{
+  "formatVersion": "202502",
+  "computeEngineSettings": {},
+  "name": "Dataflow 1",
+  "queryGroups": [],
+  "documentLocale": "en-US",
+  "queriesMetadata": {
+    "Fabric_TutorialAdventureWorks_Product_Categories": {
+      "queryId": "4cd5c0be-9918-45f0-a926-9394a838367e",
+      "queryName": "Fabric_TutorialAdventureWorks_Product_Categories",
+      "loadEnabled": false
+    },
+    "Fabric_TutorialProduct_Subcategories": {
+      "queryId": "7c281471-2e6d-47a6-a8e1-01236fa21ec6",
+      "queryName": "Fabric_TutorialProduct_Subcategories",
+      "loadEnabled": false
+    },
+    "Merge": {
+      "queryId": "69f638dd-17a6-49d6-94d2-56a779684419",
+      "queryName": "Merge",
+      "loadEnabled": false
+    },
+    "Group_Active_Loans": {
+      "queryId": "ad7e5d13-359d-41cd-8d3c-f0b97d8d5cef",
+      "queryName": "Group_Active_Loans",
+      "loadEnabled": false
+    },
+    "Merge_DataDestination": {
+      "queryId": "933ea69e-4d16-4593-a967-8839e5bfeb7e",
+      "queryName": "Merge_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    },
+    "Group_Active_Loans csv_DataDestination": {
+      "queryId": "70b766af-3e36-4530-8573-9bfc88a94a0e",
+      "queryName": "Group_Active_Loans csv_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    },
+    "Fabric_TutorialProduct_Subcategories_DataDestination": {
+      "queryId": "dbb9132d-98dd-4201-950f-d9bd3dae5aed",
+      "queryName": "Fabric_TutorialProduct_Subcategories_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    },
+    "Fabric_TutorialAdventureWorks_Product_Categories_DataDestination": {
+      "queryId": "895f5f06-ccb1-40a9-b1b7-600e115dfa84",
+      "queryName": "Fabric_TutorialAdventureWorks_Product_Categories_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    }
+  },
+  "connections": [
+    {
+      "path": "Lakehouse",
+      "kind": "Lakehouse",
+      "connectionId": "{\"ClusterId\":\"bf65009d-0154-45e7-9e04-b65cb1ce0720\",\"DatasourceId\":\"1dff9feb-3037-478f-a9df-8ab90d135d51\"}"
+    }
+  ]
+}

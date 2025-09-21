@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "MLModel",
+    "displayName": "MLMODEL"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "df5defa5-b889-92ac-4f12-8c76207976d6"
+  }
+}

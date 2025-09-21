@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Dataflow",
+    "displayName": "Loan data"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "0bd54525-46e3-a38a-4c24-82b152169000"
+  }
+}

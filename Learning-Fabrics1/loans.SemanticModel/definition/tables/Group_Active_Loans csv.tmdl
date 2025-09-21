@@ -1,0 +1,96 @@
+table 'Group_Active_Loans csv'
+	lineageTag: 1ebe2e30-e642-479c-8cfe-2d4af557d9a1
+	sourceLineageTag: [dbo].[Group_Active_Loans csv]
+
+	column Branch
+		dataType: string
+		lineageTag: 2df779ec-a0d4-40ff-bfb5-d551c01b970c
+		sourceLineageTag: Branch
+		summarizeBy: none
+		sourceColumn: Branch
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Product
+		dataType: string
+		lineageTag: e5317806-5bc3-420f-ad9f-8313daf4d7ee
+		sourceLineageTag: Product
+		summarizeBy: none
+		sourceColumn: Product
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Loan Amount'
+		dataType: double
+		lineageTag: ac6ea012-fa80-4e94-8168-4c3689f616ae
+		sourceLineageTag: Loan Amount
+		summarizeBy: sum
+		sourceColumn: Loan Amount
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Interest
+		dataType: int64
+		formatString: 0
+		lineageTag: 6bf016a7-c8a2-4a61-8a0c-806b6bee4635
+		sourceLineageTag: Interest
+		summarizeBy: sum
+		sourceColumn: Interest
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column OSP
+		dataType: double
+		lineageTag: acef4d74-4081-408b-b88a-f51311228bb8
+		sourceLineageTag: OSP
+		summarizeBy: sum
+		sourceColumn: OSP
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column OSI
+		dataType: double
+		lineageTag: e9918798-a925-457d-b861-0afd5cfa694c
+		sourceLineageTag: OSI
+		summarizeBy: sum
+		sourceColumn: OSI
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Relationship Officer'
+		dataType: string
+		lineageTag: 9ebba047-5c26-41ff-92ef-c991ddeec9d4
+		sourceLineageTag: Relationship Officer
+		summarizeBy: none
+		sourceColumn: Relationship Officer
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Group_Active_Loans csv' = entity
+		mode: directLake
+		source
+			entityName: Group_Active_Loans csv
+			expressionSource: 'DirectLake - samalakehousesilver'
+
+	changedProperty = IsHidden
+
