@@ -1,0 +1,69 @@
+{
+  "schema_version": 63,
+  "tiles": [
+    {
+      "id": "c436093f-e83b-4f08-8de3-17c4eaa4e385",
+      "queryRef": {
+        "kind": "query",
+        "queryId": "c2d34e0f-93d2-443d-a721-478d2159cb04"
+      },
+      "title": "EventhouseCommandLogs Table Preview",
+      "visualType": "table",
+      "pageId": "96024dea-55e5-45e0-b608-14df8c301cb4",
+      "layout": {
+        "x": 0,
+        "y": 0,
+        "width": 21,
+        "height": 7
+      },
+      "visualOptions": {}
+    }
+  ],
+  "baseQueries": [],
+  "parameters": [
+    {
+      "kind": "duration",
+      "id": "35dffae8-3ae1-4795-85f8-72bf863efbe4",
+      "displayName": "Time range",
+      "description": "",
+      "beginVariableName": "_startTime",
+      "endVariableName": "_endTime",
+      "defaultValue": {
+        "kind": "dynamic",
+        "count": 1,
+        "unit": "hours"
+      },
+      "showOnPages": {
+        "kind": "all"
+      }
+    }
+  ],
+  "dataSources": [
+    {
+      "id": "ec4998e5-21a4-45fa-9b45-9dd7bccc116a",
+      "kind": "kusto-trident",
+      "clusterUri": "https://trd-a8uubntu6xfzchw2xc.z6.kusto.fabric.microsoft.com",
+      "database": "505962f9-c2e6-425a-b2e2-63b95b252379",
+      "name": "Monitoring KQL database",
+      "scopeId": "kusto-trident",
+      "workspace": "c80302c8-0ac6-4eef-988c-fae517ab7b89"
+    }
+  ],
+  "pages": [
+    {
+      "name": "Page 1",
+      "id": "96024dea-55e5-45e0-b608-14df8c301cb4"
+    }
+  ],
+  "queries": [
+    {
+      "dataSource": {
+        "kind": "inline",
+        "dataSourceId": "ec4998e5-21a4-45fa-9b45-9dd7bccc116a"
+      },
+      "text": "['EventhouseCommandLogs'] | take 10",
+      "id": "c2d34e0f-93d2-443d-a721-478d2159cb04",
+      "usedVariables": []
+    }
+  ]
+}

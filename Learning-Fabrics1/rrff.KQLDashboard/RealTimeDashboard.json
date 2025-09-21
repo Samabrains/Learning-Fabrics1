@@ -1,0 +1,72 @@
+{
+  "autoRefresh": {
+    "enabled": false
+  },
+  "baseQueries": [],
+  "tiles": [
+    {
+      "id": "c2f35d5f-b46b-4f18-80bc-36a8b61e0889",
+      "queryRef": {
+        "kind": "query",
+        "queryId": "1cca24a5-de8e-4917-9aa4-5c49e6f4200c"
+      },
+      "title": "SemanticModelLogs Table Preview",
+      "visualType": "table",
+      "pageId": "2c0eb6d3-613e-4300-a013-f411a793d1f6",
+      "layout": {
+        "x": 0,
+        "y": 0,
+        "width": 6,
+        "height": 6
+      },
+      "visualOptions": {}
+    }
+  ],
+  "dataSources": [
+    {
+      "id": "9903cdae-dbae-45f8-9571-978320bff8a2",
+      "kind": "kusto-trident",
+      "clusterUri": "https://trd-a8uubntu6xfzchw2xc.z6.kusto.fabric.microsoft.com",
+      "database": "505962f9-c2e6-425a-b2e2-63b95b252379",
+      "name": "Monitoring KQL database",
+      "scopeId": "kusto-trident",
+      "workspace": "c80302c8-0ac6-4eef-988c-fae517ab7b89"
+    }
+  ],
+  "pages": [
+    {
+      "name": "Page 1",
+      "id": "2c0eb6d3-613e-4300-a013-f411a793d1f6"
+    }
+  ],
+  "parameters": [
+    {
+      "kind": "duration",
+      "id": "646e787b-0563-4b94-89d7-3aac29ddf8f8",
+      "displayName": "Time range",
+      "description": "",
+      "beginVariableName": "_startTime",
+      "endVariableName": "_endTime",
+      "defaultValue": {
+        "kind": "dynamic",
+        "count": 1,
+        "unit": "hours"
+      },
+      "showOnPages": {
+        "kind": "all"
+      }
+    }
+  ],
+  "queries": [
+    {
+      "id": "1cca24a5-de8e-4917-9aa4-5c49e6f4200c",
+      "dataSource": {
+        "kind": "inline",
+        "dataSourceId": "9903cdae-dbae-45f8-9571-978320bff8a2"
+      },
+      "usedVariables": [],
+      "text": "['SemanticModelLogs'] | take 10"
+    }
+  ],
+  "schema_version": 64
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "KQLDashboard",
+    "displayName": "rrff",
+    "description": "rrff"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "aeca7ca0-5515-8bc9-4d8c-e93b68c58500"
+  }
+}

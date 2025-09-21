@@ -1,0 +1,79 @@
+{
+  "schema_version": 63,
+  "tiles": [
+    {
+      "id": "8106362f-3f8a-4add-a762-63dd4edf88e4",
+      "queryRef": {
+        "kind": "query",
+        "queryId": "496a7f91-4a65-4ba5-be3d-c21f159d54b7"
+      },
+      "title": "EventhouseCommandLogs Table Preview",
+      "visualType": "table",
+      "pageId": "6da63689-c8aa-46d5-bd29-e31793c14092",
+      "layout": {
+        "x": 0,
+        "y": 0,
+        "width": 16,
+        "height": 6
+      },
+      "visualOptions": {
+        "table__enableRenderLinks": true,
+        "colorRulesDisabled": true,
+        "colorStyle": "light",
+        "crossFilter": [],
+        "crossFilterDisabled": false,
+        "drillthroughDisabled": false,
+        "drillthrough": [],
+        "table__renderLinks": [],
+        "colorRules": []
+      }
+    }
+  ],
+  "baseQueries": [],
+  "parameters": [
+    {
+      "kind": "duration",
+      "id": "4ee757ed-0c94-41f4-a141-25707dbf1d8a",
+      "displayName": "Time range",
+      "description": "",
+      "beginVariableName": "_startTime",
+      "endVariableName": "_endTime",
+      "defaultValue": {
+        "kind": "dynamic",
+        "count": 1,
+        "unit": "hours"
+      },
+      "showOnPages": {
+        "kind": "all"
+      }
+    }
+  ],
+  "dataSources": [
+    {
+      "id": "24eda96b-11ff-4f3a-99f0-63369cfa7d98",
+      "kind": "kusto-trident",
+      "clusterUri": "https://trd-a8uubntu6xfzchw2xc.z6.kusto.fabric.microsoft.com",
+      "database": "505962f9-c2e6-425a-b2e2-63b95b252379",
+      "name": "Monitoring KQL database",
+      "scopeId": "kusto-trident",
+      "workspace": "c80302c8-0ac6-4eef-988c-fae517ab7b89"
+    }
+  ],
+  "pages": [
+    {
+      "name": "Page 1",
+      "id": "6da63689-c8aa-46d5-bd29-e31793c14092"
+    }
+  ],
+  "queries": [
+    {
+      "dataSource": {
+        "kind": "inline",
+        "dataSourceId": "24eda96b-11ff-4f3a-99f0-63369cfa7d98"
+      },
+      "text": "['EventhouseCommandLogs'] | take 10",
+      "id": "496a7f91-4a65-4ba5-be3d-c21f159d54b7",
+      "usedVariables": []
+    }
+  ]
+}
