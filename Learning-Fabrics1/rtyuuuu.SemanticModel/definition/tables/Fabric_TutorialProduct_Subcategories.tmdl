@@ -1,0 +1,45 @@
+table Fabric_TutorialProduct_Subcategories
+	lineageTag: 52b6c6ec-b7ac-433c-aea4-2f4583d335bd
+	sourceLineageTag: [dbo].[Fabric_TutorialProduct_Subcategories]
+
+	column ProductSubcategoryKey
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: bfb62c68-33c1-4639-a21e-ced6708e16ea
+		sourceLineageTag: ProductSubcategoryKey
+		summarizeBy: count
+		sourceColumn: ProductSubcategoryKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column SubcategoryName
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: fb5f78b4-6873-4876-a6cd-cd539703a72f
+		sourceLineageTag: SubcategoryName
+		summarizeBy: none
+		sourceColumn: SubcategoryName
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProductCategoryKey
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 313d7752-0082-4e47-9137-e869f3c7aaa2
+		sourceLineageTag: ProductCategoryKey
+		summarizeBy: count
+		sourceColumn: ProductCategoryKey
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Fabric_TutorialProduct_Subcategories = entity
+		mode: directLake
+		source
+			entityName: Fabric_TutorialProduct_Subcategories
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+
