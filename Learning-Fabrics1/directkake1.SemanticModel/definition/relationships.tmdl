@@ -1,0 +1,4 @@
+relationship 5c24ced9-d3a1-ea57-1932-24ddc2af405c
+	fromColumn: Fabric_TutorialProduct_Subcategories.ProductCategoryKey
+	toColumn: Fabric_TutorialAdventureWorks_Product_Categories.ProductCategoryKey
+

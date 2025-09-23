@@ -1,0 +1,39 @@
+table Fabric_TutorialProduct_Subcategories
+	lineageTag: d3741e23-0e6e-4814-af63-6bc578202d0f
+	sourceLineageTag: [dbo].[Fabric_TutorialProduct_Subcategories]
+
+	column ProductSubcategoryKey
+		dataType: int64
+		formatString: 0
+		lineageTag: 98693075-d996-4095-817e-50d40fdbac5c
+		sourceLineageTag: ProductSubcategoryKey
+		summarizeBy: count
+		sourceColumn: ProductSubcategoryKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column SubcategoryName
+		dataType: string
+		lineageTag: 9f5eda38-ef0a-4004-8fc3-4c9677466441
+		sourceLineageTag: SubcategoryName
+		summarizeBy: none
+		sourceColumn: SubcategoryName
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProductCategoryKey
+		dataType: int64
+		formatString: 0
+		lineageTag: 43a13a14-3eb0-4b47-8212-5073c4e776b8
+		sourceLineageTag: ProductCategoryKey
+		summarizeBy: none
+		sourceColumn: ProductCategoryKey
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Fabric_TutorialProduct_Subcategories = entity
+		mode: directLake
+		source
+			entityName: Fabric_TutorialProduct_Subcategories
+			expressionSource: 'DirectLake - samalakehouse'
+

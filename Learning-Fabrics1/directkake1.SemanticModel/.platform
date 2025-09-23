@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "directkake1"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "0e85bb53-3669-a8f0-4dc9-b1698f02e815"
+  }
+}
