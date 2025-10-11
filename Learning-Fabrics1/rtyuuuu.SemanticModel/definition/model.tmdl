@@ -11,5 +11,9 @@ annotation __PBI_TimeIntelligenceEnabled = 0
 
 annotation PBI_QueryOrder = ["DatabaseQuery"]
 
+annotation PBI_ProTooling = ["WebModelingEdit"]
+
 ref table Fabric_TutorialProduct_Subcategories
+ref table Fabric_TutorialAdventureWorks_Product_Categories
+ref table Merge
 

@@ -29,7 +29,7 @@ table Fabric_TutorialProduct_Subcategories
 		sourceProviderType: bigint
 		lineageTag: 313d7752-0082-4e47-9137-e869f3c7aaa2
 		sourceLineageTag: ProductCategoryKey
-		summarizeBy: count
+		summarizeBy: none
 		sourceColumn: ProductCategoryKey
 
 		annotation SummarizationSetBy = Automatic

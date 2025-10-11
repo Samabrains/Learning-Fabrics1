@@ -1,0 +1,36 @@
+table Fabric_TutorialAdventureWorks_Product_Categories
+	lineageTag: f4f49f16-fe29-4ba7-b689-cf6596cf5403
+	sourceLineageTag: [dbo].[Fabric_TutorialAdventureWorks_Product_Categories]
+
+	column CategoryName
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 20563845-0710-4b61-bd1a-f787500ae5af
+		sourceLineageTag: CategoryName
+		summarizeBy: none
+		sourceColumn: CategoryName
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProductCategoryKey
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 0c3f88c8-9db8-4b7e-a75c-619f705b8d86
+		sourceLineageTag: ProductCategoryKey
+		summarizeBy: none
+		sourceColumn: ProductCategoryKey
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Fabric_TutorialAdventureWorks_Product_Categories = entity
+		mode: directLake
+		source
+			entityName: Fabric_TutorialAdventureWorks_Product_Categories
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

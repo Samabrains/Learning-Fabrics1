@@ -1,0 +1,66 @@
+table Merge
+	lineageTag: ac85ed45-5748-4010-a976-7044dec6365e
+	sourceLineageTag: [dbo].[Merge]
+
+	column ProductSubcategoryKey
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 608224b6-1759-44e3-bfab-2c6ebee1bcda
+		sourceLineageTag: ProductSubcategoryKey
+		summarizeBy: count
+		sourceColumn: ProductSubcategoryKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column SubcategoryName
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 3ac2e9a5-06cb-4886-b3f2-0caa4bb6fdaf
+		sourceLineageTag: SubcategoryName
+		summarizeBy: none
+		sourceColumn: SubcategoryName
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProductCategoryKey
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 120fe4a1-c110-424f-8866-b5e1aed47e47
+		sourceLineageTag: ProductCategoryKey
+		summarizeBy: none
+		sourceColumn: ProductCategoryKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'ProductCategoryKey.1'
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 87d6e6e4-314c-4255-af33-1cb51671bc93
+		sourceLineageTag: ProductCategoryKey.1
+		summarizeBy: sum
+		sourceColumn: ProductCategoryKey.1
+
+		annotation SummarizationSetBy = Automatic
+
+	column CategoryName
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 6bedf639-1ef3-400b-92d6-afd50f652e2b
+		sourceLineageTag: CategoryName
+		summarizeBy: none
+		sourceColumn: CategoryName
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Merge = entity
+		mode: directLake
+		source
+			entityName: Merge
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

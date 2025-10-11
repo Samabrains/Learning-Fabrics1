@@ -26,6 +26,7 @@ table Fabric_TutorialProduct_Subcategories
 		formatString: 0
 		lineageTag: 43a13a14-3eb0-4b47-8212-5073c4e776b8
 		sourceLineageTag: ProductCategoryKey
+		isDefaultLabel
 		summarizeBy: none
 		sourceColumn: ProductCategoryKey
 

@@ -1,4 +1,4 @@
-table Fabric_TutorialAdventureWorks_Product_Categories
+table Fabric_TutorialA
 	lineageTag: be13525f-003b-4543-9cb2-4eeb67d6a7ec
 	sourceLineageTag: [dbo].[Fabric_TutorialAdventureWorks_Product_Categories]
 
@@ -16,14 +16,17 @@ table Fabric_TutorialAdventureWorks_Product_Categories
 		dataType: string
 		lineageTag: d6e0cd02-7129-4190-9fde-2ed7a75a3df0
 		sourceLineageTag: CategoryName
+		isDefaultLabel
 		summarizeBy: none
 		sourceColumn: CategoryName
 
 		annotation SummarizationSetBy = Automatic
 
-	partition Fabric_TutorialAdventureWorks_Product_Categories = entity
+	partition Fabric_TutorialA = entity
 		mode: directLake
 		source
 			entityName: Fabric_TutorialAdventureWorks_Product_Categories
 			expressionSource: 'DirectLake - samalakehouse'
+
+	changedProperty = Name
 
